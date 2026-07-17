@@ -1,0 +1,26 @@
+.DS_Store
+.thumbnail
+
+# Export original de la herramienta de diseño (reemplazado por index.html)
+support.js
+*.dc.html
+
+# Solo las imágenes que usa la página
+uploads/*
+!uploads/hero-c1.png
+!uploads/hero-c2.png
+!uploads/hero-c3.png
+!uploads/hero-c4.png
+!uploads/DA7D25F5-9B23-46D4-81BB-0F8A79F5D36E.jpg
+!uploads/DA7D25F5-9B23-46D4-81BB-0F8A79F5D36E-886a6a3b.jpg
+!uploads/5186B8CE-3A69-4F3F-86AA-3786963EA299-49e29d15.jpg
+!uploads/13A49EB8-6E0F-4301-B519-903E074B17E7.jpg
+!uploads/B78C0A71-F7D9-41F8-8819-A2E6874626D4.jpg
+!uploads/2FFDCCFC-67A4-4C78-9F2C-EF16FDD3C62D.jpg
+!uploads/A6FDCEE6-4F4F-46C1-B2C8-B12DBF2A47DA.jpg
+!uploads/EEB204DF-7303-4673-8617-5D54DC7EEA22.jpg
+!uploads/96D80C23-2D94-4C2E-BC2A-3C1352507EC3.jpg
+!uploads/4AA9D089-6CE8-49DD-93C9-D53BA95F0F33.jpg
+!uploads/C6B19891-0549-446F-ACF6-F7A9AA03CD35.jpg
+!uploads/67E27A10-1729-47CC-86CF-6BDF51E4DF5F.jpg
+!uploads/A1AAB523-369D-4E24-9D3D-D84F36279AE4.jpg

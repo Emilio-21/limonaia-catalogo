@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limonaia · Catálogo de Verano</title>
+<meta name="description" content="Catálogo de verano de Limonaia: bouquets de vela artesanales — limones de cera, peonías y rosas sobre jarrones de cerámica. Edición mediterránea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F7F1E5; color: #5C5346; font-family: 'Karla', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #5C5346; }
+  a:hover { color: #B99A2E; }
+  .btn-wa { margin-top: 10px; display: inline-flex; align-items: center; gap: 10px; background: #7E9375; color: #FDFAF3; text-decoration: none; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; padding: 16px 38px; border-radius: 999px; transition: background 0.3s ease-out, transform 0.3s ease-out; }
+  .btn-wa:hover { background: #6C815F; color: #FDFAF3; transform: translateY(-2px); }
+  @keyframes drift { 0% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-22px) rotate(6deg); } 100% { transform: translateY(0) rotate(0deg); } }
+  @media (min-width: 760px) {
+    [data-grid="productos"] { grid-template-columns: repeat(3, 1fr) !important; }
+    [data-grid="proceso"] { grid-template-columns: 1fr 1fr !important; }
+    [data-grid="editorial"] { grid-template-columns: 1.05fr 0.95fr !important; }
+    [data-row="b"] > [data-media] { order: 2; }
+    [data-gallery] { grid-template-columns: repeat(4, 1fr) !important; grid-auto-rows: 150px !important; }
+    [data-hero-title] { font-size: 88px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div style="overflow-x: hidden;">
+
+  <!-- HERO -->
+  <header style="position: relative; height: 100vh; min-height: 620px; overflow: hidden; background: #F7F1E5;">
+    <!-- jarrones asomando desde las cuatro esquinas -->
+    <img src="uploads/hero-c4.png" alt="Jarrón de cerámica con limones de cera" style="position: absolute; top: -6%; left: -4%; width: clamp(160px, 22vw, 340px); transform: rotate(118deg); transform-origin: 50% 50%; filter: drop-shadow(18px 30px 26px rgba(92, 83, 70, 0.28)); z-index: 1;">
+    <img src="uploads/hero-c2.png" alt="Jarrón de piedra con bouquet de peonías y rosas de cera" style="position: absolute; top: -7%; right: -5%; width: clamp(160px, 22vw, 340px); transform: rotate(-122deg); filter: drop-shadow(-16px 30px 26px rgba(92, 83, 70, 0.28)); z-index: 1;">
+    <img src="uploads/hero-c3.png" alt="Ánfora de cerámica con limones de cera y eucalipto" style="position: absolute; bottom: -14%; left: -3%; width: clamp(190px, 25vw, 400px); transform: rotate(6deg); filter: drop-shadow(20px 34px 30px rgba(92, 83, 70, 0.3)); z-index: 1;">
+    <img src="uploads/hero-c1.png" alt="Jarrón azul floral con bouquet de rosas de cera" style="position: absolute; bottom: -16%; right: -4%; width: clamp(170px, 23vw, 360px); transform: rotate(-24deg); filter: drop-shadow(-18px 32px 28px rgba(92, 83, 70, 0.3)); z-index: 1;">
+    <div data-lemon style="position: absolute; top: 16%; left: 30%; width: 58px; height: 44px; background: radial-gradient(ellipse at 40% 40%, #F6D45E, #EEBE2B); border-radius: 52% 48% 55% 45% / 60% 55% 45% 40%; opacity: 0.8; animation: drift 9s ease-in-out infinite; box-shadow: 0 12px 30px rgba(238, 190, 43, 0.35); z-index: 1;"></div>
+
+    <!-- pill de marca arriba al centro -->
+    <div style="position: absolute; top: 30px; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 14px; z-index: 3;">
+      <span style="flex: 0 1 120px; height: 1px; background: #C9BCA4;"></span>
+      <span style="border: 1px solid #C9BCA4; border-radius: 999px; padding: 9px 22px; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: #6E6455; background: rgba(253, 250, 243, 0.7);">Limonaia · velas artesanales</span>
+      <span style="flex: 0 1 120px; height: 1px; background: #C9BCA4;"></span>
+    </div>
+
+    <!-- título central -->
+    <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 2; padding: 0 24px;">
+      <h1 data-hero-title style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 54px; line-height: 1.0; color: #443D32; text-wrap: balance;">Catálogo<br><em style="font-weight: 400; color: #C9A227;">de Verano</em></h1>
+      <p style="margin: 18px 0 0; font-size: 14px; letter-spacing: 0.26em; text-transform: uppercase; color: #9A8E7B;">Bouquets de vela · Edición mediterránea</p>
+      <div style="display: flex; gap: 24px; margin-top: 26px; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;">
+        <a href="#coleccion" style="text-decoration: none; transition: color 0.3s ease-out;">Colección</a>
+        <a href="#proceso" style="text-decoration: none; transition: color 0.3s ease-out;">Proceso</a>
+        <a href="#pedidos" style="text-decoration: none; transition: color 0.3s ease-out;">Pedidos</a>
+      </div>
+    </div>
+
+    <!-- desliza -->
+    <a href="#coleccion" style="position: absolute; bottom: 26px; left: 0; right: 0; margin: 0 auto; width: fit-content; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #9A8E7B; z-index: 3; transition: color 0.3s ease-out;">Desliza<span style="display: block; width: 1px; height: 34px; background: #C9BCA4;"></span></a>
+  </header>
+
+  <!-- COLECCIÓN -->
+  <section id="coleccion" style="background: #FDFAF3; padding: 96px 24px 96px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div data-reveal style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; margin-bottom: 40px;">
+        <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">La colección</p>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 54px); color: #443D32;">Cuatro piezas, hechas a mano</h2>
+      </div>
+      <div data-row="a" data-grid="editorial" style="display: grid; grid-template-columns: 1fr; gap: 28px 72px; align-items: center; padding: 84px 0; border-top: 1px solid #EAE0C9;">
+        <div data-media data-card data-reveal style="border-radius: 20px; overflow: hidden; box-shadow: 0 26px 54px rgba(92, 83, 70, 0.18);">
+          <img data-card-img src="uploads/DA7D25F5-9B23-46D4-81BB-0F8A79F5D36E.jpg" alt="Ánfora de cerámica con limones de cera y eucalipto en las manos" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 45%; transition: transform 0.5s ease-out;">
+        </div>
+        <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 46ch;">
+          <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">Nº 01 · Limones y eucalipto</p>
+          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; color: #443D32; text-wrap: balance;">Limonaia Grande</h3>
+          <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">La pieza insignia: limones de cera vertidos a mano y eucalipto preservado sobre un ánfora artesanal con asas. Huele a patio italiano en julio.</p>
+          <div style="display: flex; align-items: center; gap: 22px; margin-top: 8px;">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #B08D2A;">$ 1,250</span>
+            <a href="#pedidos" style="text-decoration: none; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: #5C5346; border-bottom: 1px solid #C9BCA4; padding-bottom: 4px; transition: color 0.3s ease-out, border-color 0.3s ease-out;">Pedir esta pieza</a>
+          </div>
+        </div>
+      </div>
+      <div data-row="b" data-grid="editorial" style="display: grid; grid-template-columns: 1fr; gap: 28px 72px; align-items: center; padding: 84px 0; border-top: 1px solid #EAE0C9;">
+        <div data-media data-card data-reveal style="border-radius: 20px; overflow: hidden; box-shadow: 0 26px 54px rgba(92, 83, 70, 0.18);">
+          <img data-card-img src="uploads/5186B8CE-3A69-4F3F-86AA-3786963EA299-49e29d15.jpg" alt="Jarrón azul floral con bouquet de rosas y peonías de cera" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 62%; transition: transform 0.5s ease-out;">
+        </div>
+        <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 46ch;">
+          <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">Nº 02 · Edición limitada</p>
+          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; color: #443D32; text-wrap: balance;">Azzurro</h3>
+          <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Rosas marfil y peonías sobre un jarrón floral azul decorado a mano, con detalle de perlas. Un guiño a la mayólica de la costa amalfitana.</p>
+          <div style="display: flex; align-items: center; gap: 22px; margin-top: 8px;">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #B08D2A;">$ 1,100</span>
+            <a href="#pedidos" style="text-decoration: none; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: #5C5346; border-bottom: 1px solid #C9BCA4; padding-bottom: 4px; transition: color 0.3s ease-out, border-color 0.3s ease-out;">Pedir esta pieza</a>
+          </div>
+        </div>
+      </div>
+      <div data-reveal style="padding: 84px 0 0; border-top: 1px solid #EAE0C9; margin-top: 84px;">
+        <p style="margin: 0 0 24px; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B; text-align: center;">Nº 03 y Nº 04 · El dúo perfecto</p>
+        <div style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 26px 54px rgba(92, 83, 70, 0.18);">
+          <img src="uploads/13A49EB8-6E0F-4301-B519-903E074B17E7.jpg" alt="Peonia Rosa y Limonaia Mini sobre una mesita de madera" style="display: block; width: 100%; height: clamp(440px, 72vh, 660px); object-fit: cover; object-position: center 42%;">
+          <div style="position: absolute; bottom: 26px; left: 26px; display: flex; flex-direction: column; gap: 2px; background: rgba(253, 250, 243, 0.94); border-radius: 14px; padding: 14px 22px; box-shadow: 0 10px 26px rgba(60, 52, 40, 0.22);">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: #443D32;">Peonia Rosa</span>
+          <span style="font-size: 14px; font-weight: 500; color: #B08D2A;">$ 980</span>
+        </div>
+          <div style="position: absolute; bottom: 26px; right: 26px; display: flex; flex-direction: column; gap: 2px; background: rgba(253, 250, 243, 0.94); border-radius: 14px; padding: 14px 22px; box-shadow: 0 10px 26px rgba(60, 52, 40, 0.22);">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: #443D32;">Limonaia Mini</span>
+          <span style="font-size: 14px; font-weight: 500; color: #B08D2A;">$ 720</span>
+        </div>
+        </div>
+        <p style="margin: 20px auto 0; max-width: 52ch; text-align: center; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Peonías empolvadas o limones con eucalipto: dos clásicos que se acompañan de maravilla. Llévate el par y regala uno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso" style="padding: 96px 24px; background: #F7F1E5;">
+    <div data-grid="proceso" style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center;">
+      <div data-reveal style="position: relative;">
+        <img src="uploads/B78C0A71-F7D9-41F8-8819-A2E6874626D4.jpg" alt="Bouquets terminados sobre repisa de madera clara" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 20px;">
+        <div data-lemon style="position: absolute; bottom: -20px; left: -14px; width: 54px; height: 42px; background: radial-gradient(ellipse at 40% 40%, #B7C4AE, #93A488); border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%; opacity: 0.9; animation: drift 11s ease-in-out infinite;"></div>
+      </div>
+      <div data-reveal style="display: flex; flex-direction: column; gap: 18px; max-width: 52ch;">
+        <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">El proceso</p>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #443D32; text-wrap: pretty;">Hechos a mano, uno a uno, sin prisa</h2>
+        <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Cada limón y cada flor se vierte en cera de soya, se desmolda a mano y se pinta con pigmentos naturales. Después componemos el bouquet pieza por pieza sobre jarrones de cerámica que también nacen en talleres artesanales.</p>
+        <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Ningún bouquet es igual a otro: la mezcla de tonos, espigas y eucalipto preservado hace de cada pieza un pequeño rincón de la costa italiana.</p>
+        <div style="display: flex; gap: 32px; margin-top: 8px;">
+          <div style="display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 600; color: #B08D2A;">100%</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9A8E7B;">Cera de soya</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 600; color: #B08D2A;">5-7 días</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9A8E7B;">De elaboración</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEDIDOS -->
+  <section id="pedidos" style="background: #EFE6D2; padding: 96px 24px;">
+    <div data-reveal style="max-width: 720px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px;">
+      <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">Pedidos y personalización</p>
+      <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #443D32; text-wrap: pretty;">Imagina tu bouquet, nosotros lo hacemos realidad</h2>
+      <p style="margin: 0; max-width: 48ch; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Elige colores, flores y jarrón, o cuéntanos la ocasión y lo diseñamos contigo. Escríbenos y en menos de 24 horas tienes tu propuesta.</p>
+      <a id="whatsapp-cta" href="#" target="_blank" rel="noopener" class="btn-wa">Escríbenos por WhatsApp</a>
+      <p style="margin: 4px 0 0; font-size: 13px; color: #9A8E7B;">Respondemos de lunes a sábado · Envíos a todo el país</p>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" style="background: #FDFAF3; padding: 96px 24px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div data-reveal style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; margin-bottom: 44px;">
+        <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">Galería</p>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 54px); color: #443D32;">Luz de tarde, cera y cerámica</h2>
+      </div>
+      <div data-gallery style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; grid-auto-rows: 130px; grid-auto-flow: dense;">
+        <img src="uploads/2FFDCCFC-67A4-4C78-9F2C-EF16FDD3C62D.jpg" alt="Dos bouquets de vela sobre mesita de madera" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 2;">
+        <img src="uploads/A6FDCEE6-4F4F-46C1-B2C8-B12DBF2A47DA.jpg" alt="Detalle de limones de cera con eucalipto" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 3;">
+        <img src="uploads/EEB204DF-7303-4673-8617-5D54DC7EEA22.jpg" alt="Detalle de peonías y rosas de cera" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 3;">
+        <img src="uploads/96D80C23-2D94-4C2E-BC2A-3C1352507EC3.jpg" alt="Bouquets de flores y limones al sol" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 2;">
+        <img src="uploads/4AA9D089-6CE8-49DD-93C9-D53BA95F0F33.jpg" alt="Bouquet de limones sostenido en las manos" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 2;">
+        <img src="uploads/C6B19891-0549-446F-ACF6-F7A9AA03CD35.jpg" alt="Dos bouquets de cera lado a lado" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 3;">
+        <img src="uploads/67E27A10-1729-47CC-86CF-6BDF51E4DF5F.jpg" alt="Ánfora con limones de cera en el patio" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 3;">
+        <img src="uploads/DA7D25F5-9B23-46D4-81BB-0F8A79F5D36E-886a6a3b.jpg" alt="Jarrón azul floral con bouquet romántico" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 2;">
+        <img src="uploads/A1AAB523-369D-4E24-9D3D-D84F36279AE4.jpg" alt="Bouquets junto a una planta en cesto de mimbre" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; grid-row: span 2;">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #F7F1E5; padding: 44px 24px 40px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: #4E463A;">Limonaia</div>
+      <div style="display: flex; gap: 24px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;">
+        <a href="#" style="text-decoration: none; transition: color 0.3s ease-out;">Instagram</a>
+        <a href="#" style="text-decoration: none; transition: color 0.3s ease-out;">TikTok</a>
+        <a href="#" style="text-decoration: none; transition: color 0.3s ease-out;">Pinterest</a>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: #9A8E7B;">© 2026 Limonaia · Velas artesanales</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // Número de WhatsApp para pedidos (solo dígitos, con código de país). Cambiar aquí.
+  var WHATSAPP_NUMBER = '5215500000000';
+
+  (function () {
+    var num = WHATSAPP_NUMBER.replace(/[^0-9]/g, '');
+    var msg = encodeURIComponent('Hola, me encantaría pedir un bouquet de velas ✨');
+    document.getElementById('whatsapp-cta').href = 'https://wa.me/' + num + '?text=' + msg;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('[data-reveal]');
+    if (!reduce && 'IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight * 0.9) return; // ya visible: no ocultar
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(24px)';
+        el.style.transition = 'opacity 0.55s ease-out, transform 0.55s ease-out';
+        io.observe(el);
+      });
+    }
+    // zoom de imagen al pasar el mouse por la tarjeta
+    document.querySelectorAll('[data-card]').forEach(function (card) {
+      var img = card.querySelector('[data-card-img]');
+      if (!img) return;
+      card.addEventListener('mouseenter', function () { img.style.transform = 'scale(1.03)'; });
+      card.addEventListener('mouseleave', function () { img.style.transform = 'scale(1)'; });
+    });
+    if (reduce) document.querySelectorAll('[data-lemon]').forEach(function (el) { el.style.animation = 'none'; });
+  })();
+</script>
+</body>
+</html>
