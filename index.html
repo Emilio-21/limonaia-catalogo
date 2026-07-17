@@ -16,6 +16,25 @@
   .btn-wa { margin-top: 10px; display: inline-flex; align-items: center; gap: 10px; background: #7E9375; color: #FDFAF3; text-decoration: none; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; padding: 16px 38px; border-radius: 999px; transition: background 0.3s ease-out, transform 0.3s ease-out; }
   .btn-wa:hover { background: #6C815F; color: #FDFAF3; transform: translateY(-2px); }
   @keyframes drift { 0% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-22px) rotate(6deg); } 100% { transform: translateY(0) rotate(0deg); } }
+
+  /* Jarrones del hero: posición por esquina + entrada animada de afuera hacia adentro */
+  .hero-vase { position: absolute; z-index: 1; transform: translate(0, 0) rotate(var(--rot)); animation: vase-in 1.15s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+  @keyframes vase-in {
+    from { opacity: 0; transform: translate(var(--in-x), var(--in-y)) rotate(var(--rot)); }
+    to   { opacity: 1; transform: translate(0, 0) rotate(var(--rot)); }
+  }
+  .hero-vase[data-corner="tl"] { top: -6%; left: -4%; width: clamp(160px, 22vw, 340px); --rot: 118deg; --in-x: -70%; --in-y: -70%; filter: drop-shadow(18px 30px 26px rgba(92, 83, 70, 0.28)); animation-delay: 0.05s; }
+  .hero-vase[data-corner="tr"] { top: -7%; right: -5%; width: clamp(160px, 22vw, 340px); --rot: -122deg; --in-x: 70%; --in-y: -70%; filter: drop-shadow(-16px 30px 26px rgba(92, 83, 70, 0.28)); animation-delay: 0.2s; }
+  .hero-vase[data-corner="bl"] { bottom: -14%; left: -3%; width: clamp(190px, 25vw, 400px); --rot: 6deg; --in-x: -70%; --in-y: 70%; filter: drop-shadow(20px 34px 30px rgba(92, 83, 70, 0.3)); animation-delay: 0.35s; }
+  .hero-vase[data-corner="br"] { bottom: -16%; right: -4%; width: clamp(170px, 23vw, 360px); --rot: -24deg; --in-x: 70%; --in-y: 70%; filter: drop-shadow(-18px 32px 28px rgba(92, 83, 70, 0.3)); animation-delay: 0.5s; }
+  @media (max-width: 759px) {
+    .hero-vase[data-corner="tl"] { top: 4%; left: -16%; width: 46vw; }
+    .hero-vase[data-corner="tr"] { top: 5%; right: -17%; width: 50vw; }
+    .hero-vase[data-corner="bl"] { bottom: -5%; left: -12%; width: 54vw; }
+    .hero-vase[data-corner="br"] { bottom: -9%; right: -14%; width: 50vw; }
+    header [data-lemon] { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hero-vase { animation: none; } }
   @media (min-width: 760px) {
     [data-grid="productos"] { grid-template-columns: repeat(3, 1fr) !important; }
     [data-grid="proceso"] { grid-template-columns: 1fr 1fr !important; }
@@ -33,10 +52,10 @@
   <!-- HERO -->
   <header style="position: relative; height: 100vh; min-height: 620px; overflow: hidden; background: #F7F1E5;">
     <!-- jarrones asomando desde las cuatro esquinas -->
-    <img src="uploads/hero-c4.png" alt="Jarrón de cerámica con limones de cera" style="position: absolute; top: -6%; left: -4%; width: clamp(160px, 22vw, 340px); transform: rotate(118deg); transform-origin: 50% 50%; filter: drop-shadow(18px 30px 26px rgba(92, 83, 70, 0.28)); z-index: 1;">
-    <img src="uploads/hero-c2.png" alt="Jarrón de piedra con bouquet de peonías y rosas de cera" style="position: absolute; top: -7%; right: -5%; width: clamp(160px, 22vw, 340px); transform: rotate(-122deg); filter: drop-shadow(-16px 30px 26px rgba(92, 83, 70, 0.28)); z-index: 1;">
-    <img src="uploads/hero-c3.png" alt="Ánfora de cerámica con limones de cera y eucalipto" style="position: absolute; bottom: -14%; left: -3%; width: clamp(190px, 25vw, 400px); transform: rotate(6deg); filter: drop-shadow(20px 34px 30px rgba(92, 83, 70, 0.3)); z-index: 1;">
-    <img src="uploads/hero-c1.png" alt="Jarrón azul floral con bouquet de rosas de cera" style="position: absolute; bottom: -16%; right: -4%; width: clamp(170px, 23vw, 360px); transform: rotate(-24deg); filter: drop-shadow(-18px 32px 28px rgba(92, 83, 70, 0.3)); z-index: 1;">
+    <img class="hero-vase" data-corner="tl" src="uploads/hero-c4.png" alt="Jarrón de cerámica con limones de cera">
+    <img class="hero-vase" data-corner="tr" src="uploads/hero-c2.png" alt="Jarrón de piedra con bouquet de peonías y rosas de cera">
+    <img class="hero-vase" data-corner="bl" src="uploads/hero-c3.png" alt="Ánfora de cerámica con limones de cera y eucalipto">
+    <img class="hero-vase" data-corner="br" src="uploads/hero-c1.png" alt="Jarrón azul floral con bouquet de rosas de cera">
     <div data-lemon style="position: absolute; top: 16%; left: 30%; width: 58px; height: 44px; background: radial-gradient(ellipse at 40% 40%, #F6D45E, #EEBE2B); border-radius: 52% 48% 55% 45% / 60% 55% 45% 40%; opacity: 0.8; animation: drift 9s ease-in-out infinite; box-shadow: 0 12px 30px rgba(238, 190, 43, 0.35); z-index: 1;"></div>
 
     <!-- pill de marca arriba al centro -->
