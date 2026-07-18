@@ -35,6 +35,18 @@
     header [data-lemon] { display: none; }
   }
   @media (prefers-reduced-motion: reduce) { .hero-vase { animation: none; } }
+
+  /* Tarjetas de nombre sobre la foto del dúo */
+  .duo-tag { position: absolute; bottom: 26px; display: flex; flex-direction: column; gap: 2px; background: rgba(253, 250, 243, 0.94); border-radius: 14px; padding: 14px 22px; box-shadow: 0 10px 26px rgba(60, 52, 40, 0.22); }
+  .duo-tag-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: #443D32; }
+  .duo-tag-price { font-size: 14px; font-weight: 500; color: #B08D2A; }
+  @media (max-width: 759px) {
+    .duo-tag { bottom: 14px; padding: 10px 16px; border-radius: 12px; }
+    .duo-tag[style*="left"] { left: 14px !important; }
+    .duo-tag[style*="right"] { right: 14px !important; }
+    .duo-tag-name { font-size: 19px; }
+    .duo-tag-price { font-size: 13px; }
+  }
   @media (min-width: 760px) {
     [data-grid="productos"] { grid-template-columns: repeat(3, 1fr) !important; }
     [data-grid="proceso"] { grid-template-columns: 1fr 1fr !important; }
@@ -93,7 +105,7 @@
         </div>
         <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 46ch;">
           <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">Nº 01 · Limones y eucalipto</p>
-          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; color: #443D32; text-wrap: balance;">Limonaia Grande</h3>
+          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; color: #443D32; text-wrap: balance;">Jarrón Amalfi</h3>
           <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">La pieza insignia: limones de cera vertidos a mano y eucalipto preservado sobre un ánfora artesanal con asas. Huele a patio italiano en julio.</p>
           <div style="display: flex; align-items: center; gap: 22px; margin-top: 8px;">
             <span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #B08D2A;">$ 1,250</span>
@@ -107,8 +119,8 @@
         </div>
         <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 46ch;">
           <p style="margin: 0; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B;">Nº 02 · Edición limitada</p>
-          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; color: #443D32; text-wrap: balance;">Azzurro</h3>
-          <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Rosas marfil y peonías sobre un jarrón floral azul decorado a mano, con detalle de perlas. Un guiño a la mayólica de la costa amalfitana.</p>
+          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; color: #443D32; text-wrap: balance;">Mamma Mía</h3>
+          <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Un jarrón floral azul decorado a mano, con detalle de perlas: un guiño a la mayólica de la costa amalfitana. Elígelo con bouquet de flores o de limones.</p>
           <div style="display: flex; align-items: center; gap: 22px; margin-top: 8px;">
             <span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #B08D2A;">$ 1,100</span>
             <a href="#pedidos" style="text-decoration: none; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: #5C5346; border-bottom: 1px solid #C9BCA4; padding-bottom: 4px; transition: color 0.3s ease-out, border-color 0.3s ease-out;">Pedir esta pieza</a>
@@ -118,14 +130,14 @@
       <div data-reveal style="padding: 84px 0 0; border-top: 1px solid #EAE0C9; margin-top: 84px;">
         <p style="margin: 0 0 24px; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9A8E7B; text-align: center;">Nº 03 y Nº 04 · El dúo perfecto</p>
         <div style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 26px 54px rgba(92, 83, 70, 0.18);">
-          <img src="uploads/13A49EB8-6E0F-4301-B519-903E074B17E7.jpg" alt="Peonia Rosa y Limonaia Mini sobre una mesita de madera" style="display: block; width: 100%; height: clamp(440px, 72vh, 660px); object-fit: cover; object-position: center 42%;">
-          <div style="position: absolute; bottom: 26px; left: 26px; display: flex; flex-direction: column; gap: 2px; background: rgba(253, 250, 243, 0.94); border-radius: 14px; padding: 14px 22px; box-shadow: 0 10px 26px rgba(60, 52, 40, 0.22);">
-          <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: #443D32;">Peonia Rosa</span>
-          <span style="font-size: 14px; font-weight: 500; color: #B08D2A;">$ 980</span>
+          <img src="uploads/13A49EB8-6E0F-4301-B519-903E074B17E7.jpg" alt="Toscana y Capri sobre una mesita de madera" style="display: block; width: 100%; height: clamp(440px, 72vh, 660px); object-fit: cover; object-position: center 42%;">
+          <div class="duo-tag" style="left: 26px;">
+          <span class="duo-tag-name">Toscana</span>
+          <span class="duo-tag-price">$ 980</span>
         </div>
-          <div style="position: absolute; bottom: 26px; right: 26px; display: flex; flex-direction: column; gap: 2px; background: rgba(253, 250, 243, 0.94); border-radius: 14px; padding: 14px 22px; box-shadow: 0 10px 26px rgba(60, 52, 40, 0.22);">
-          <span style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: #443D32;">Limonaia Mini</span>
-          <span style="font-size: 14px; font-weight: 500; color: #B08D2A;">$ 720</span>
+          <div class="duo-tag" style="right: 26px;">
+          <span class="duo-tag-name">Capri</span>
+          <span class="duo-tag-price">$ 720</span>
         </div>
         </div>
         <p style="margin: 20px auto 0; max-width: 52ch; text-align: center; font-size: 16px; font-weight: 300; line-height: 1.7; color: #6E6455; text-wrap: pretty;">Peonías empolvadas o limones con eucalipto: dos clásicos que se acompañan de maravilla. Llévate el par y regala uno.</p>
